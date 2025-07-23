@@ -22,5 +22,18 @@
         Console.WriteLine("Column in the array: " + numbers.GetLength(0));
         Console.WriteLine("Row in the array: " + numbers.GetLength(1));
         Console.WriteLine("Total elements in the array: " + numbers.Length);
+
+        int max = numbers[0, 0];
+        for (int i = 0; i < numbers.GetLength(0); i++)
+        {
+            for (int j = 0; j < numbers.GetLength(1); j++)
+            {
+                if (numbers[i, j] > max)
+                {
+                    max = numbers[i, j];
+                }
+            }
+        }
+        Console.WriteLine("Max value in the array: " + max);
     }
 }
