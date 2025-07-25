@@ -8,15 +8,21 @@
         int num2 = Convert.ToInt32(Console.ReadLine());
 
         // Find and display the maximum and minimum values
-        int max = FindMax(num1, num2);
-        int min = num1 < num2 ? num1 : num2;
-        Console.WriteLine($"Maximum value: {max}");
-        Console.WriteLine($"Minimum value: {min}");
+        PrintMaxMin(FindMax(num1, num2), FindMin(num1, num2));
     }
 
     public static int FindMax(int a, int b)
     {
         return a > b ? a : b;
+    }
+    public static int FindMin(int a, int b)
+    {
+        return a < b ? a : b;
+    }
+    public static void PrintMaxMin(int max, int min)
+    {
+        Console.WriteLine($"Maximum value: {max}");
+        Console.WriteLine($"Minimum value: {min}");
     }
 }
 
