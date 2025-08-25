@@ -21,10 +21,12 @@ namespace TIC_TAC_TOE
                 Console.WriteLine("\n");
                 if (player % 2 == 0)//checking the chance of the player
                 {
+                    Console.WriteLine("==============Player 2 Turn==============");
                     Console.WriteLine("Player 2 Chance");
                 }
                 else
                 {
+                    Console.WriteLine("==============Player 1 Turn==============");
                     Console.WriteLine("Player 1 Chance");
                 }
                 Console.WriteLine("\n");
